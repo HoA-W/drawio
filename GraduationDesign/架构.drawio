@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-16T10:14:32.470Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="Ej5cQ5u86vQhkAzlq4Xa" version="14.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-16T10:17:09.766Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.128 Safari/537.36" etag="PJpnlUMKN4i3eNGVpxdA" version="14.6.0" type="github">
   <diagram id="EAfrOOPwEgUAlloDIzI3" name="第 1 页">
     <mxGraphModel dx="1865" dy="548" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -26,10 +26,22 @@
           <mxGeometry x="150" y="640" width="370" height="150" as="geometry" />
         </mxCell>
         <mxCell id="E39O6uzAxmvISPyey-Xv-6" value="&lt;b&gt;普通用户&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="-30" y="365" width="30" height="60" as="geometry" />
+          <mxGeometry x="-50" y="365" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="E39O6uzAxmvISPyey-Xv-7" value="&lt;b&gt;管理员用户&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="-190" y="520" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E39O6uzAxmvISPyey-Xv-12" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="20" y="335" width="20" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="E39O6uzAxmvISPyey-Xv-13" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="330" width="20" height="450" as="geometry" />
+        </mxCell>
+        <mxCell id="E39O6uzAxmvISPyey-Xv-18" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;strokeWidth=2;rotation=90;" vertex="1" parent="1">
+          <mxGeometry y="750" width="20" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="E39O6uzAxmvISPyey-Xv-19" value="HTTP协议" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="880" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
