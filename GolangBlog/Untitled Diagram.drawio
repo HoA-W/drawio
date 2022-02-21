@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-21T13:45:26.435Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="yEwLSisVrcnHMOWkiJ31" version="16.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-21T13:59:34.846Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="Q0L252N1NPjAUHEMCMQO" version="16.5.6" type="github">
   <diagram id="_esSkfqDq4ebZRXKBrC7" name="Page-1">
-    <mxGraphModel dx="2054" dy="877" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1707" dy="877" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -57,6 +57,66 @@
         </mxCell>
         <mxCell id="8tqqaebuSJLrLSOYF8vN-21" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;从schedule()返回，执行原来的逻辑&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="431" y="737" width="187" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="902" width="371" height="778" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-24" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 22px&quot;&gt;内核空间，所有进程相同&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="901" width="371" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-36" value="&lt;b style=&quot;font-size: 24px&quot;&gt;内核地址空间(1G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="-60" y="961.25" width="241" height="29.5" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-37" value="&lt;b style=&quot;font-size: 24px&quot;&gt;用户地址空间(3G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+          <mxGeometry x="-53" y="1351" width="218" height="27" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-38" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;栈段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1051" width="371" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-39" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="178" y="898" width="20" height="153" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="178" y="1051" width="20" height="627" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1051" width="20" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-42" value="执行execve系统调用后初始栈空间(4K)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="639" y="1063" width="377" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-43" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;代码段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1599" width="372" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-44" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;初始化数据段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1539" width="371" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-45" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="613" y="1541" width="20" height="135" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-46" value="从可执行文件中加载而来" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="639" y="1581.5" width="377" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-47" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;未初始化初始化数据段(全为0)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1485" width="371" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-48" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;堆&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1404" width="372" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-49" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="380.5" y="1134" width="61.5" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-51" value="" style="shape=singleArrow;direction=north;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;arrowWidth=0.1882086167800495;arrowSize=0.22344322344322512;" vertex="1" parent="1">
+          <mxGeometry x="379.5" y="1365" width="63" height="39" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-52" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;mmap&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#bac8d3;strokeColor=#23445d;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="224" y="1214" width="371" height="83" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-53" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="618" y="1215" width="20" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-54" value="内存映射段，Linux可以将文件直接映射到内存，也可以创建不映射文件的匿名映射" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+          <mxGeometry x="648" y="1219" width="377" height="86" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
