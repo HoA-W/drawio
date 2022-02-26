@@ -1,40 +1,40 @@
-<mxfile host="app.diagrams.net" modified="2022-02-21T13:59:34.846Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36" etag="Q0L252N1NPjAUHEMCMQO" version="16.5.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-26T14:55:44.912Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36" etag="_WWfDaxHZHwtsY_txz_H" version="16.6.1" type="github">
   <diagram id="_esSkfqDq4ebZRXKBrC7" name="Page-1">
-    <mxGraphModel dx="1707" dy="877" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1346" dy="614" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-3" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;schedule()&lt;br&gt;禁止抢占/禁止本地中断/获取当前cpu就绪队列自旋锁&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-3" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;schedule()&lt;br&gt;禁止抢占/禁止本地中断/获取当前cpu就绪队列自旋锁&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="167.5" y="116" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-5" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;选择下一个要执行的进程B&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-5" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;选择下一个要执行的进程B&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="167.5" y="219" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-6" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;context_switch()&lt;br&gt;释放就绪队列自旋锁/开启本地中断(这个要根据编译内核时配置不同可能不执行)&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-6" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;context_switch()&lt;br&gt;释放就绪队列自旋锁/开启本地中断(这个要根据编译内核时配置不同可能不执行)&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="167.5" y="322" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-7" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;switch_to()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-7" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;switch_to()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="167.5" y="425" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-8" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="84" y="130" width="35" height="359" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-9" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;进程A的内核态执行路径&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-9" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;进程A的内核态执行路径&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;" parent="1" vertex="1">
           <mxGeometry x="-33" y="290" width="129" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-11" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=16;" edge="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-11" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=classic;html=1;rounded=0;fontSize=16;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="8" y="546" as="sourcePoint" />
             <mxPoint x="166" y="501" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-12" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;进程A停止在switch_to函数中，等待下次获取cpu后返回&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-12" value="&lt;font style=&quot;font-size: 18px&quot;&gt;&lt;b&gt;进程A停止在switch_to函数中，等待下次获取cpu后返回&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="-248" y="511" width="338" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-14" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;switch_to()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-14" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;switch_to()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="433" y="425" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;fontSize=16;endFill=0;startArrow=classic;startFill=1;" edge="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-15" value="" style="edgeStyle=elbowEdgeStyle;elbow=horizontal;endArrow=none;html=1;rounded=0;fontSize=16;endFill=0;startArrow=classic;startFill=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="625" y="502" as="sourcePoint" />
             <mxPoint x="882" y="462" as="targetPoint" />
@@ -43,80 +43,169 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;进程B获得CPU时间，从switch_to返回继续执行，此时B仍然在schedule()函数中&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px&quot;&gt;进程B获得CPU时间，从switch_to返回继续执行，此时B仍然在schedule()函数中&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="633" y="455" width="353" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-17" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;finish_task_switch()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-17" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;finish_task_switch()&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="433" y="529" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-18" value="&lt;b style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255)&quot;&gt;如果context_switch中没有开中断，那么该函数中会开中断&lt;br&gt;如果前一个进程DEAD(父进程调用了wait4)，则释放死亡进程最后的资源，主要是mm和task_struct&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-18" value="&lt;b style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 14px ; font-style: normal ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(255 , 255 , 255)&quot;&gt;如果context_switch中没有开中断，那么该函数中会开中断&lt;br&gt;如果前一个进程DEAD(父进程调用了wait4)，则释放死亡进程最后的资源，主要是mm和task_struct&lt;/b&gt;" style="text;whiteSpace=wrap;html=1;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="629" y="529" width="540" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-20" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;schedule()&lt;br&gt;开启抢占(但是不尝试调度)&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-20" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;schedule()&lt;br&gt;开启抢占(但是不尝试调度)&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="433" y="633" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-21" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;从schedule()返回，执行原来的逻辑&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-21" value="&lt;font style=&quot;font-size: 14px&quot;&gt;&lt;b&gt;从schedule()返回，执行原来的逻辑&lt;br&gt;&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="431" y="737" width="187" height="74" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-23" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="902" width="371" height="778" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-24" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 22px&quot;&gt;内核空间，所有进程相同&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-24" value="&lt;font size=&quot;1&quot;&gt;&lt;b style=&quot;font-size: 22px&quot;&gt;内核空间，所有进程相同&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="901" width="371" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-36" value="&lt;b style=&quot;font-size: 24px&quot;&gt;内核地址空间(1G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-36" value="&lt;b style=&quot;font-size: 24px&quot;&gt;内核地址空间(1G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="-60" y="961.25" width="241" height="29.5" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-37" value="&lt;b style=&quot;font-size: 24px&quot;&gt;用户地址空间(3G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-37" value="&lt;b style=&quot;font-size: 24px&quot;&gt;用户地址空间(3G)&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="1" vertex="1">
           <mxGeometry x="-53" y="1351" width="218" height="27" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-38" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;栈段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-38" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;栈段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="1051" width="371" height="83" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-39" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-39" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="178" y="898" width="20" height="153" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-40" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;fontSize=24;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="178" y="1051" width="20" height="627" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-41" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="613" y="1051" width="20" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-42" value="执行execve系统调用后初始栈空间(4K)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-42" value="执行execve系统调用后初始栈空间(4K)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="639" y="1063" width="377" height="86" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-43" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;代码段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-43" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;代码段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="224" y="1599" width="372" height="81" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-44" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;初始化数据段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-44" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;初始化数据段&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="1539" width="371" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-45" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-45" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="613" y="1541" width="20" height="135" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-46" value="从可执行文件中加载而来" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-46" value="从可执行文件中加载而来" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="639" y="1581.5" width="377" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-47" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;未初始化初始化数据段(全为0)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-47" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;未初始化初始化数据段(全为0)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="1485" width="371" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-48" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;堆&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-48" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;堆&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="225" y="1404" width="372" height="81" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-49" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-49" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="380.5" y="1134" width="61.5" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-51" value="" style="shape=singleArrow;direction=north;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;arrowWidth=0.1882086167800495;arrowSize=0.22344322344322512;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-51" value="" style="shape=singleArrow;direction=north;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=2;arrowWidth=0.1882086167800495;arrowSize=0.22344322344322512;" parent="1" vertex="1">
           <mxGeometry x="379.5" y="1365" width="63" height="39" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-52" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;mmap&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#bac8d3;strokeColor=#23445d;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-52" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;mmap&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=18;fillColor=#bac8d3;strokeColor=#23445d;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="224" y="1214" width="371" height="83" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-53" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-53" value="" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;flipH=1;fontSize=24;strokeWidth=2;" parent="1" vertex="1">
           <mxGeometry x="618" y="1215" width="20" height="82" as="geometry" />
         </mxCell>
-        <mxCell id="8tqqaebuSJLrLSOYF8vN-54" value="内存映射段，Linux可以将文件直接映射到内存，也可以创建不映射文件的匿名映射" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" vertex="1" parent="1">
+        <mxCell id="8tqqaebuSJLrLSOYF8vN-54" value="内存映射段，Linux可以将文件直接映射到内存，也可以创建不映射文件的匿名映射" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;" parent="1" vertex="1">
           <mxGeometry x="648" y="1219" width="377" height="86" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="77" y="1877" width="519" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-2" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;主调度器&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="112" y="1897" width="155" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-3" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;周期性调度器&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="399" y="1897.5" width="155" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-4" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="149" y="2072" width="393" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-5" target="QOz6wAHM0RIwOLsQSGYw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-5" value="实时调度器类" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="167" y="2100" width="98" height="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-6" target="QOz6wAHM0RIwOLsQSGYw-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-6" value="CFS调度器泪" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="296" y="2100" width="101" height="39.5" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-7" value="..." style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="428" y="2101" width="92" height="38.5" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-10" value="&lt;b&gt;调度器类&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="299" y="2071" width="73" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-11" target="QOz6wAHM0RIwOLsQSGYw-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-11" value="进程1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="-28" y="2282" width="65" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-17" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-12" target="QOz6wAHM0RIwOLsQSGYw-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-12" value="进程2" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="59" y="2282" width="65" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-13" target="QOz6wAHM0RIwOLsQSGYw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-13" value="进程3" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="146" y="2282" width="65" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontSize=15;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-14" target="QOz6wAHM0RIwOLsQSGYw-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="348.04761904761904" y="2135.9523809523807" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-14" value="进程4" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="234" y="2282" width="65" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=15;" edge="1" parent="1" source="QOz6wAHM0RIwOLsQSGYw-15" target="QOz6wAHM0RIwOLsQSGYw-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-15" value="进程5" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#b0e3e6;strokeColor=#0e8088;" vertex="1" parent="1">
+          <mxGeometry x="322" y="2282" width="65" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-21" value="" style="shape=doubleArrow;direction=south;whiteSpace=wrap;html=1;fontSize=15;fillColor=#bac8d3;strokeColor=#23445d;" vertex="1" parent="1">
+          <mxGeometry x="307.5" y="1996" width="58" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-22" value="&lt;b&gt;选择进程&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="373" y="2010" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-23" value="&lt;b&gt;CPU&lt;/b&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fontSize=15;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="738" y="1888" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-24" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;fontSize=15;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1898" width="88" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-25" value="&lt;b&gt;上下文切换&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="622.25" y="1860" width="83.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-26" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;fontSize=15;fillColor=#e6d0de;gradientColor=#d5739d;strokeColor=#996185;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="658" y="2023" as="sourcePoint" />
+            <mxPoint x="554" y="1958" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-27" value="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;实时时钟&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;fillColor=#f8cecc;gradientColor=#ea6b66;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="687" y="2013" width="90" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="QOz6wAHM0RIwOLsQSGYw-28" value="&lt;b&gt;触发周期调度&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="537" y="1983" width="114" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
